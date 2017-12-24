@@ -1,3 +1,12 @@
-div {
-    color: red;
+img {
+ display: block;
+    margin: 0 auto;
+  
+}
+body {
+    position: fixed;
+}
+
+.hidden {
+    display: none;
 }
