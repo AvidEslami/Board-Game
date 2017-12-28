@@ -7,5 +7,7 @@ function start() {
     x.classList.add("hidden");
      var z = document.getElementById("board"); 
     z.classList.remove("hidden");
+    var z = document.getElementById("player1"); 
+    z.classList.remove("hidden");
     
 }
