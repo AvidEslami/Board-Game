@@ -36,7 +36,8 @@ function handlenewturn() {
         
     } else if (turn==2) {
         console.log(turn)
-        
+        var w = document.getElementById("wheel");
+        w.classList.remove("hidden");
     }
     
 }
