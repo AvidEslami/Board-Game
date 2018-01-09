@@ -8,16 +8,22 @@
     <meta name="description" content="to BEE or not to BEE">
     <meta name="author" content="SitePoint">
     <link rel="stylesheet" href="css/styles.css">
-        
+    <script src="js/scripts.js"></script>
+       
 </head>
 
 <body>
     <div>
-        <img src="BEEEEEEE/Final%20project%20cover%20page.png" id="cover" onclick="start()" height="95%" width="95%">           
-        <img src="BEEEEEEE/Bee%20board.png" id="board" height="95%" width="95%" class="hidden">
-        <img src="BEEEEEEE/Board%20game,%20players.png" id="player1" height="75" width="100" class="hidden">
+        <img src="BEEEEEEE/Final%20project%20cover%20page.png" id="cover" onclick="start()" height="95%" width="95%">
+        <img src="BEEEEEEE/Bee%20board.png" id="board" height="100%" width="100%" class="hidden">
+        <img src="BEEEEEEE/Board%20game,%20players.png" id="player1" height="75" width="100" class="hidden position0">
+        <img src="BEEEEEEE/Player%20scores.png" id="score1" height="15%" width="18%" class="hidden">
+        <img src="BEEEEEEE/NEXT.png" id="nextbutton" height="12%" width="18%"class="hidden" onclick="nextround()">
+
    </div>
     
-    <script src="js/scripts.js"></script>
+<div id="score1result" class="hidden">0</div>
+<div id="turn">0</div>
+    
 </body>
 </html>
