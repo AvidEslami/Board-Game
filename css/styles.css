@@ -50,6 +50,11 @@ body {
     left: 750px;
 }
 
+.position1 {
+    top: 300px;
+    left: 650px;
+}
+
 #wheel {
     position: fixed;
     top: 75px;
@@ -65,4 +70,10 @@ body {
 
 .spinning {
     transform: rotate(740deg);
+}
+
+#poisonwheel {
+     position: fixed;
+    top: 75px;
+    left: 375px;
 }
