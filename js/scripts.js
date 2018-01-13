@@ -58,7 +58,9 @@ function handlenewturn() {
             var p = document.getElementById("poisonwheel");
             p.classList.remove("hidden");
         } else if (spinnerValue === "green") {
-            var y = document.getElementById("player1")
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var y = document.getElementById("player1");
             y.classList.add("position2");
             y.classList.remove("position1");
         }
