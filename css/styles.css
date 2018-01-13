@@ -77,3 +77,13 @@ body {
     top: 75px;
     left: 375px;
 }
+
+table {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+td {
+    border: 1px solid black;
+}

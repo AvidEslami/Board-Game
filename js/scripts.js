@@ -70,7 +70,8 @@ function handlenewturn() {
             var z = document.getElementById("wheeltip");
             z.classList.add("hidden");
         } else if (spinnerValue === "blue") {
-            
+            var t = document.getElementById("table");
+            t.classList.remove("hidden");
         }
         
     
