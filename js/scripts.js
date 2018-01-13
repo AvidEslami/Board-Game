@@ -28,6 +28,8 @@ function nextround(){
     handlenewturn()
 }
 
+var spinnerValue;
+
 function handlenewturn() {
       if (turn==1) {
         var y = document.getElementById("player1");
@@ -46,7 +48,7 @@ function handlenewturn() {
             var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
             s.style.transform = "rotate("+ rotateDeg +"deg)";
             
-            var spinnerValue = getSpinnerLocation(rotateDeg, "normalSpinner");
+            spinnerValue = getSpinnerLocation(rotateDeg, "normalSpinner");
             
         },1000);
         
@@ -56,6 +58,7 @@ function handlenewturn() {
             var p = document.getElementById("poisonwheel");
             p.classList.remove("hidden");
         } else if (spinnerValue === "green") {
+            var y = document.getElementById("player1")
             y.classList.add("position2");
             y.classList.remove("position1");
         }
