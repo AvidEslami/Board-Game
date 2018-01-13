@@ -55,6 +55,8 @@ function handlenewturn() {
     }else if (turn==3) {
         
         if (spinnerValue === "red") {
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
             var p = document.getElementById("poisonwheel");
             p.classList.remove("hidden");
         } else if (spinnerValue === "green") {
@@ -63,6 +65,8 @@ function handlenewturn() {
             var y = document.getElementById("player1");
             y.classList.add("position2");
             y.classList.remove("position1");
+        } else if (spinnerValue === "blue") {
+            
         }
         
     
