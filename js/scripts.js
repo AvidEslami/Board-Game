@@ -59,12 +59,16 @@ function handlenewturn() {
             x.classList.add("hidden");
             var p = document.getElementById("poisonwheel");
             p.classList.remove("hidden");
+            var z = document.getElementById("wheeltip");
+            z.classList.add("hidden");
         } else if (spinnerValue === "green") {
             var x = document.getElementById("wheel");
             x.classList.add("hidden");
             var y = document.getElementById("player1");
             y.classList.add("position2");
             y.classList.remove("position1");
+            var z = document.getElementById("wheeltip");
+            z.classList.add("hidden");
         } else if (spinnerValue === "blue") {
             
         }
