@@ -52,7 +52,17 @@ body {
 
 #wheel {
     position: fixed;
-    top: 0px;
-    left: 300px;
+    top: 75px;
+    left: 375px;
 }
 
+#wheeltip {
+    position: fixed;
+    transition: 7s ease-out all;
+    top: 75px;
+    left: 615px;
+}
+
+.spinning {
+    transform: rotate(740deg);
+}
