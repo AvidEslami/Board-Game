@@ -85,6 +85,11 @@ function handlenewturn() {
             x.classList.add("hidden");
             var s = document.getElementById("wheeltip");
             s.classList.add("hidden");
+        } else if (turn==3) {
+            if (spinnerValue ==="dead") {
+                var b = document.getElementById("board");
+                b.classlist.add("hidden");
+            }
         }
         
     
@@ -157,7 +162,7 @@ function reply_click(innerText) {
     
     switch(innerText) {
         case "1":
-            questionTextElement.innerText = "Question 1?";
+            questionTextElement.innerText = "Approximately how many domesticated bees are left in the world?";
             optionAElement.innerText = "some option a";
             optionBElement.innerText = "some option b";
             optionCElement.innerText = "some option c";
