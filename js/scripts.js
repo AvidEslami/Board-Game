@@ -64,8 +64,8 @@ function handlenewturn() {
             setTimeout(function() {
                 
                 var s = document.getElementById("wheeltip");
-                var multiplier = 1;
-                var rotateDeg = getRandomInt(225 * multiplier, 225  * multiplier);
+                var multiplier = 3;
+                var rotateDeg = getRandomInt(320 * multiplier, 720  * multiplier);
                 s.style.transform = "rotate("+ rotateDeg +"deg)";
 
                 spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
