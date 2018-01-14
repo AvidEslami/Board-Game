@@ -18,7 +18,7 @@
         <img src="BEEEEEEE/Bee%20board.png" id="board" height="100%" width="100%" class="hidden">
         <img src="BEEEEEEE/Board%20game,%20players.png" id="player1" height="75" width="100" class="hidden position0">
         <img src="BEEEEEEE/Player%20scores.png" id="score1" height="15%" width="18%" class="hidden">
-        <img src="BEEEEEEE/NEXT.png" id="nextbutton" height="12%" width="18%"class="hidden" onclick="nextround()">
+        <img src="BEEEEEEE/NEXT.png" id="nextbutton" height="12%" width="18%" class="hidden" onclick="nextround()">
         <img src="BEEEEEEE/Final%20project,%20roulette..png" id="wheel" height="80%" width="40%" class="hidden">
         <img src="BEEEEEEE/Poison%20roulette.png" id="poisonwheel" height="80%" width="40%" class="hidden">
         <img src="BEEEEEEE/Final%20project,%20roulette.%20(1).png" id="wheeltip" height="80%" width="5%" class="hidden">
@@ -28,8 +28,8 @@
         <div id="table" class="hidden">
             <table>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
+                    <td onClick="reply_click(this.innerText)">1</td>
+                    <td onClick="reply_click(this.innerText)">2</td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
@@ -84,7 +84,17 @@
                     <td>50</td>
                 </tr>
             </table>
-        </div> 
+        </div>
+    
+    <div id="question" data-question-selected="" class="hidden">
+        <span id="questionText"></span>
+        <div>
+            <span id="optionA" onclick="answer(this.id)"></span>
+            <span id="optionB" onclick="answer(this.id)"></span>
+            <span id="optionC" onclick="answer(this.id)"></span>
+            <span id="optionD" onclick="answer(this.id)"></span>
+        </div>
+    </div>
     
     
 <div id="score1result" class="hidden">0</div>
