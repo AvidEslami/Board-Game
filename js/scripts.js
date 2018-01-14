@@ -64,8 +64,8 @@ function handlenewturn() {
             setTimeout(function() {
                 
                 var s = document.getElementById("wheeltip");
-                var multiplier = 2;
-                var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
+                var multiplier = 1;
+                var rotateDeg = getRandomInt(225 * multiplier, 225  * multiplier);
                 s.style.transform = "rotate("+ rotateDeg +"deg)";
 
                 spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
@@ -127,7 +127,7 @@ function getSpinnerLocation(rotateDeg, spinnerType) {
         
     } else if (spinnerType === "poisonSpinner") {
         //Other spinner
-        if (absoluteDeg < 220 && absoluteDeg >= 0) {
+        if (absoluteDeg < 226 && absoluteDeg >= 0) {
             //continue
             console.log("dead");
             return "dead";
