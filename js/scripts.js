@@ -44,13 +44,13 @@ function handlenewturn() {
         s.classList.remove("hidden");
         setTimeout(function() {
             
-            var multiplier = 20;
-            var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
+            var multiplier = 1;
+            var rotateDeg = getRandomInt(170 * multiplier, 170 * multiplier);
             s.style.transform = "rotate("+ rotateDeg +"deg)";
             
             spinnerValue = getSpinnerLocation(rotateDeg, "normalSpinner");
             
-        },1000);
+        },100);
         
     }else if (turn==3) {
         
@@ -59,8 +59,18 @@ function handlenewturn() {
             x.classList.add("hidden");
             var p = document.getElementById("poisonwheel");
             p.classList.remove("hidden");
-            var z = document.getElementById("wheeltip");
-            z.classList.add("hidden");
+            var s = document.getElementById("wheeltip");
+            s.classList.add("spinning");
+            setTimeout(function() {
+                
+                var s = document.getElementById("wheeltip");
+                var multiplier = 2;
+                var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
+                s.style.transform = "rotate("+ rotateDeg +"deg)";
+
+                spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
+
+            },100);
         } else if (spinnerValue === "green") {
             var x = document.getElementById("wheel");
             x.classList.add("hidden");
@@ -72,6 +82,10 @@ function handlenewturn() {
         } else if (spinnerValue === "blue") {
             var t = document.getElementById("table");
             t.classList.remove("hidden");
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var s = document.getElementById("wheeltip");
+            s.classList.add("hidden");
         }
         
     
@@ -111,8 +125,21 @@ function getSpinnerLocation(rotateDeg, spinnerType) {
             return "blue"
         }
         
-    } else {
+    } else if (spinnerType === "poisonSpinner") {
         //Other spinner
+        if (absoluteDeg < 220 && absoluteDeg >= 0) {
+            //continue
+            console.log("dead");
+            return "dead";
+       
+        } else {
+            //red
+            console.log("alive");
+            return "alive";
+          
+            
+        }
+        
     }
     
 }
