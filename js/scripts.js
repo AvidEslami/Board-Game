@@ -51,7 +51,19 @@ function handlenewturn() {
         
     }else if (turn==3) {
         
-        if (spinnerValue === "red") {
+        if (spinnerValue =="dead") {
+                turn = turn-2;
+                var b = document.getElementById("board");
+                p.classlist.add("hidden");
+            }
+            else if (spinnerValue =="alive") {
+                turn = turn-2;
+                var t = document.getElementById("board");
+                t.classList.add("hidden");
+            }
+            
+        
+        else if (spinnerValue === "red") {
             var x = document.getElementById("wheel");
             x.classList.add("hidden");
             var p = document.getElementById("poisonwheel");
@@ -85,21 +97,13 @@ function handlenewturn() {
             x.classList.add("hidden");
             var s = document.getElementById("wheeltip");
             s.classList.add("hidden");
-        } else if (turn==3) {
-            if (spinnerValue ==="dead") {
-                turn = turn-2;
-                var p = document.getElementById("poisonwheel");
-                p.classlist.add("hidden");
-            }
-            else if (spinnerValue ==="alive") {
-                turn = turn-2;
-                var p = document.getElementById("poisonwheel");
-                p.classlist.add("hidden");
-            }
-        }
+        } 
         
     
     } else if (turn==4) {
+        
+        
+        
         console.log(turn)
         var w = document.getElementById("wheel");
         w.classList.remove("hidden");
@@ -507,6 +511,125 @@ function reply_click(innerText) {
             optionCElement.innerText = "35 pounds";
             optionDElement.innerText = "45 pounds";
             break;
+        case "22":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "23":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "24":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "25":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "26":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "27":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "28":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "29":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "30":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "31":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "32":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "33":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "34":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "35":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "36":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "37":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "38":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
         
     }
         
@@ -529,9 +652,23 @@ function answer(idClicked) {
             s.classList.add("hidden");
             var t = document.getElementById("table");
             t.classList.add("hidden");
-            var p = document.getElementById("player1");
-            p.classList.add("position2");
-            p.classList.remove("position1");
+                if (turn==3) {
+                    var p = document.getElementById("player1");
+                    p.classList.add("position2");
+                    p.classList.remove("position1");
+            } else if (turn==5) {
+                var p = document.getElementById("player1");
+                p.classList.add("position3");
+                p.classList.remove("position2");
+            } else if (turn==7) {
+                var p = document.getElementById("player1");
+                p.classList.add("position4");
+                p.classList.remove("position3");
+            } else if (turn==9) {
+                var p = document.getElementById("player1");
+                p.classList.add("position5");
+                p.classList.remove("position4");
+            }
         } else {
             //incorrect
             turn = turn-2;
@@ -539,6 +676,8 @@ function answer(idClicked) {
             s.classList.add("hidden");
             var t = document.getElementById("table");
             t.classList.add("hidden");
+                        score1result = score1result-1;
+            document.getElementById("score1result").innerText = score1result;
         }
         
     } else if (idClicked === "optionB") {
@@ -549,15 +688,31 @@ function answer(idClicked) {
             s.classList.add("hidden");
             var t = document.getElementById("table");
             t.classList.add("hidden");
-            var p = document.getElementById("player1");
-            p.classList.add("position2");
-            p.classList.remove("position1");
+            if (turn==3) {
+                    var p = document.getElementById("player1");
+                    p.classList.add("position2");
+                    p.classList.remove("position1");
+            } else if (turn==5) {
+                var p = document.getElementById("player1");
+                p.classList.add("position3");
+                p.classList.remove("position2");
+            } else if (turn==7) {
+                var p = document.getElementById("player1");
+                p.classList.add("position4");
+                p.classList.remove("position3");
+            } else if (turn==9) {
+                var p = document.getElementById("player1");
+                p.classList.add("position5");
+                p.classList.remove("position4");
+            }
         } else {
             turn = turn-2;
             var s = document.getElementById("question");
             s.classList.add("hidden");
             var t = document.getElementById("table");
             t.classList.add("hidden");
+                        score1result = score1result-1;
+            document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionC") {
         if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19") {
@@ -567,15 +722,31 @@ function answer(idClicked) {
             s.classList.add("hidden");
             var t = document.getElementById("table");
             t.classList.add("hidden");
-            var p = document.getElementById("player1");
-            p.classList.add("position2");
-            p.classList.remove("position1");
+            if (turn==3) {
+                    var p = document.getElementById("player1");
+                    p.classList.add("position2");
+                    p.classList.remove("position1");
+            } else if (turn==5) {
+                var p = document.getElementById("player1");
+                p.classList.add("position3");
+                p.classList.remove("position2");
+            } else if (turn==7) {
+                var p = document.getElementById("player1");
+                p.classList.add("position4");
+                p.classList.remove("position3");
+            } else if (turn==9) {
+                var p = document.getElementById("player1");
+                p.classList.add("position5");
+                p.classList.remove("position4");
+            }
         } else {
             turn = turn-2;
             var s = document.getElementById("question");
             s.classList.add("hidden");
             var t = document.getElementById("table");
             t.classList.add("hidden");
+                        score1result = score1result-1;
+            document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionD") {
         if (questionId === "6" || questionId === "10" || questionId === "18") {
@@ -585,11 +756,27 @@ function answer(idClicked) {
             s.classList.add("hidden");
             var t = document.getElementById("table");
             t.classList.add("hidden");
-            var p = document.getElementById("player1");
-            p.classList.add("position2");
-            p.classList.remove("position1");
+            if (turn==3) {
+                    var p = document.getElementById("player1");
+                    p.classList.add("position2");
+                    p.classList.remove("position1");
+            } else if (turn==5) {
+                var p = document.getElementById("player1");
+                p.classList.add("position3");
+                p.classList.remove("position2");
+            } else if (turn==7) {
+                var p = document.getElementById("player1");
+                p.classList.add("position4");
+                p.classList.remove("position3");
+            } else if (turn==9) {
+                var p = document.getElementById("player1");
+                p.classList.add("position5");
+                p.classList.remove("position4");
+            }
         } else {
             turn = turn-2;
+            score1result = score1result-1;
+            document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
             s.classList.add("hidden");
             var t = document.getElementById("table");
