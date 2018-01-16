@@ -150,6 +150,11 @@ function handlenewturn() {
                 var p = document.getElementById("poisonwheel");
                 p.classlist.add("hidden");
             }
+            if (spinnerValue ==="alive") {
+                turn = turn-2;
+                var p = document.getElementById("poisonwheel");
+                p.classlist.add("hidden");
+            }
         }
     }
     
@@ -380,7 +385,7 @@ function answer(idClicked) {
     
     if (idClicked === "optionA") {
         
-        if (questionId === "1" || questionId === "2") {
+        if (questionId === "1" || questionId === "2" || questionId === "20") {
             //correct
             score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
