@@ -506,39 +506,39 @@ function reply_click(innerText) {
             optionDElement.innerText = "Poaching";
             break;
         case "21":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "Bee Colonies use their odour to_____?";
+            optionAElement.innerText = "Distinguish between friendly or intruder bee's";
+            optionBElement.innerText = "Odour for pleasure";
+            optionCElement.innerText = "Scare off other colonies or bees";
+            optionDElement.innerText = "Mate";
             break;
         case "22":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "Bee’s make occasional trips outside in the winter months for?";
+            optionAElement.innerText = "Getting nectar";
+            optionBElement.innerText = "Hunting";
+            optionCElement.innerText = "Protecting the hive";
+            optionDElement.innerText = "Cleansing themselves";
             break;
         case "23":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What should you do if your hive has been abandoned or is experiencing a heavy loss of bees?";
+            optionAElement.innerText = "Buy a new hive";
+            optionBElement.innerText = "Search for them";
+            optionCElement.innerText = "Wait for them to comeback";
+            optionDElement.innerText = "Report it to the Survey/Data Collection to determine the extent of CCD and the current status of honey bee colony production and health";
             break;
         case "24":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How do bees collect nectar?";
+            optionAElement.innerText = "Brushes to their skin";
+            optionBElement.innerText = "With their nose";
+            optionCElement.innerText = "With their tongue";
+            optionDElement.innerText = "Use their tongue";
             break;
         case "25":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What will happen if the bee population disappears?";
+            optionAElement.innerText = "We would have to manually pollinate";
+            optionBElement.innerText = "Loss of many crops and crop price rise, honey price rises";
+            optionCElement.innerText = "We need to use alternative pollinators";
+            optionDElement.innerText = "All of the above";
             break;
         case "26":
             questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
@@ -645,7 +645,7 @@ function answer(idClicked) {
     
     if (idClicked === "optionA") {
         
-        if (questionId === "1" || questionId === "2" || questionId === "20") {
+        if (questionId === "1" || questionId === "2" || questionId === "20" || questionId === "21") {
             //correct
             score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
@@ -716,7 +716,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionC") {
-        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19") {
+        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19" || questionId === "24") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
@@ -750,7 +750,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionD") {
-        if (questionId === "6" || questionId === "10" || questionId === "18") {
+        if (questionId === "6" || questionId === "10" || questionId === "18" || questionId === "22" || questionId === "23" || questionId === "25") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
