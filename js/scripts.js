@@ -284,6 +284,7 @@ function handlenewturn() {
                 b.classList.add("hidden");
             }
             else if (spinnerValue ==="alive") {
+                console.log("living")
                 turn = turn-2;
                 var p = document.getElementById("poisonwheel");
                 p.classList.add("hidden");
