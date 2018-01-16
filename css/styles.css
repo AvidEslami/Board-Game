@@ -56,8 +56,18 @@ body {
 }
 
 .position3 {
-    top: 425px;
-    left: 380px;
+    top: 190px;
+    left: 250px;
+}
+
+.position4 {
+    top: 80px;
+    left: 530px;
+}
+
+.position5 {
+    top: 120px;
+    left: 860px;
 }
 
 #wheel {

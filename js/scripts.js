@@ -62,7 +62,7 @@ function handlenewturn() {
                 
                 var s = document.getElementById("wheeltip");
                 var multiplier = 3;
-                var rotateDeg = getRandomInt(320 * multiplier, 720  * multiplier);
+                var rotateDeg = getRandomInt(360 * multiplier, 720  * multiplier);
                 s.style.transform = "rotate("+ rotateDeg +"deg)";
 
                 spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
@@ -91,6 +91,11 @@ function handlenewturn() {
                 var p = document.getElementById("poisonwheel");
                 p.classlist.add("hidden");
             }
+            else if (spinnerValue ==="alive") {
+                turn = turn-2;
+                var p = document.getElementById("poisonwheel");
+                p.classlist.add("hidden");
+            }
         }
         
     
@@ -102,7 +107,7 @@ function handlenewturn() {
         s.classList.remove("hidden");
         setTimeout(function() {
             
-            var multiplier = 10;
+            var multiplier = 20;
             var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
             s.style.transform = "rotate("+ rotateDeg +"deg)";
             
@@ -120,8 +125,8 @@ function handlenewturn() {
             setTimeout(function() {
                 
                 var s = document.getElementById("wheeltip");
-                var multiplier = 3;
-                var rotateDeg = getRandomInt(320 * multiplier, 720  * multiplier);
+                var multiplier = 4;
+                var rotateDeg = getRandomInt(360 * multiplier, 720  * multiplier);
                 s.style.transform = "rotate("+ rotateDeg +"deg)";
 
                 spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
@@ -131,8 +136,8 @@ function handlenewturn() {
             var x = document.getElementById("wheel");
             x.classList.add("hidden");
             var y = document.getElementById("player1");
-            y.classList.add("position2");
-            y.classList.remove("position1");
+            y.classList.add("position3");
+            y.classList.remove("position2");
             var z = document.getElementById("wheeltip");
             z.classList.add("hidden");
             score1result++;
@@ -148,14 +153,145 @@ function handlenewturn() {
             if (spinnerValue ==="dead") {
                 turn = turn-2;
                 var p = document.getElementById("poisonwheel");
-                p.classlist.add("hidden");
+                p.classList.add("hidden");
             }
-            if (spinnerValue ==="alive") {
+            else if (spinnerValue ==="alive") {
                 turn = turn-2;
-                var p = document.getElementById("poisonwheel");
-                p.classlist.add("hidden");
+                var l = document.getElementById("poisonwheel");
+                l.classList.add("hidden");
             }
         }
+    } else if (turn==6) {
+        console.log(turn)
+        var w = document.getElementById("wheel");
+        w.classList.remove("hidden");
+        var s = document.getElementById("wheeltip");
+        s.classList.remove("hidden");
+        setTimeout(function() {
+            
+            var multiplier = 30;
+            var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
+            s.style.transform = "rotate("+ rotateDeg +"deg)";
+            
+            spinnerValue = getSpinnerLocation(rotateDeg, "normalSpinner");
+            
+        },100);
+    } else if (turn==7) {
+        if (spinnerValue === "red") {
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var p = document.getElementById("poisonwheel");
+            p.classList.remove("hidden");
+            var s = document.getElementById("wheeltip");
+            s.classList.add("spinning");
+            setTimeout(function() {
+                
+                var s = document.getElementById("wheeltip");
+                var multiplier = 5;
+                var rotateDeg = getRandomInt(320 * multiplier, 720  * multiplier);
+                s.style.transform = "rotate("+ rotateDeg +"deg)";
+
+                spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
+
+            },100);
+        } else if (spinnerValue === "green") {
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var y = document.getElementById("player1");
+            y.classList.add("position4");
+            y.classList.remove("position3");
+            var z = document.getElementById("wheeltip");
+            z.classList.add("hidden");
+            score1result++;
+            document.getElementById("score1result").innerText = score1result;
+        } else if (spinnerValue === "blue") {
+            var t = document.getElementById("table");
+            t.classList.remove("hidden");
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var s = document.getElementById("wheeltip");
+            s.classList.add("hidden");
+        } else if (turn==3) {
+            if (spinnerValue ==="dead") {
+                turn = turn-2;
+                var p = document.getElementById("poisonwheel");
+                p.classList.add("hidden");
+            }
+            else if (spinnerValue ==="alive") {
+                turn = turn-2;
+                var p = document.getElementById("poisonwheel");
+                p.classList.add("hidden");
+            }
+        }
+    } else if (turn==8) {
+        console.log(turn)
+        var w = document.getElementById("wheel");
+        w.classList.remove("hidden");
+        var s = document.getElementById("wheeltip");
+        s.classList.remove("hidden");
+        setTimeout(function() {
+            
+            var multiplier = 40;
+            var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
+            s.style.transform = "rotate("+ rotateDeg +"deg)";
+            
+            spinnerValue = getSpinnerLocation(rotateDeg, "normalSpinner");
+            
+        },100);
+    } else if (turn==9) {
+        if (spinnerValue === "red") {
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var p = document.getElementById("poisonwheel");
+            p.classList.remove("hidden");
+            var s = document.getElementById("wheeltip");
+            s.classList.add("spinning");
+            setTimeout(function() {
+                
+                var s = document.getElementById("wheeltip");
+                var multiplier = 6;
+                var rotateDeg = getRandomInt(320 * multiplier, 720  * multiplier);
+                s.style.transform = "rotate("+ rotateDeg +"deg)";
+
+                spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
+
+            },100);
+        } else if (spinnerValue === "green") {
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var y = document.getElementById("player1");
+            y.classList.add("position5");
+            y.classList.remove("position4");
+            var z = document.getElementById("wheeltip");
+            z.classList.add("hidden");
+            score1result++;
+            document.getElementById("score1result").innerText = score1result;
+        } else if (spinnerValue === "blue") {
+            var t = document.getElementById("table");
+            t.classList.remove("hidden");
+            var x = document.getElementById("wheel");
+            x.classList.add("hidden");
+            var s = document.getElementById("wheeltip");
+            s.classList.add("hidden");
+        } else if (turn==3) {
+            if (spinnerValue ==="dead") {
+                turn = turn-2;
+                var b = document.getElementById("board");
+                b.classList.add("hidden");
+            }
+            else if (spinnerValue ==="alive") {
+                turn = turn-2;
+                var p = document.getElementById("poisonwheel");
+                p.classList.add("hidden");
+            }
+        }
+    } else if (turn==10) {
+        var y = document.getElementById("player1");
+            y.classList.add("position0");
+            y.classList.remove("position5");
+        score1result = score1result+5;
+        turn = turn-10;
+        document.getElementById("score1result").innerText = score1result;
     }
     
 }
