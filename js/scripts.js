@@ -292,7 +292,7 @@ function handlenewturn() {
         s.classList.remove("hidden");
         setTimeout(function() {
             
-            var multiplier = 40;
+            var multiplier = 4;
             var rotateDeg = getRandomInt(360 * multiplier, 720 * multiplier);
             s.style.transform = "rotate("+ rotateDeg +"deg)";
             
@@ -311,7 +311,7 @@ function handlenewturn() {
                 
                 var s = document.getElementById("wheeltip");
                 var multiplier = 6;
-                var rotateDeg = getRandomInt(320 * multiplier, 720  * multiplier);
+                var rotateDeg = getRandomInt(360 * multiplier, 720  * multiplier);
                 s.style.transform = "rotate("+ rotateDeg +"deg)";
 
                 spinnerValue = getSpinnerLocation(rotateDeg, "poisonSpinner");
@@ -649,62 +649,146 @@ function reply_click(innerText) {
             optionDElement.innerText = "All of the above";
             break;
         case "30":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What can you do to help the bees?";
+            optionAElement.innerText = "Spray pesticides on your lawn";
+            optionBElement.innerText = "Make a bee lover sign on the front of your door";
+            optionCElement.innerText = "Buy food for them";
+            optionDElement.innerText = "Dont spray pesticides on your lawn";
             break;
         case "31":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What can you plant to help the bees?";
+            optionAElement.innerText = "Bee friendly grass";
+            optionBElement.innerText = "Bee friendly flowers";
+            optionCElement.innerText = "Bee friendly trees";
+            optionDElement.innerText = "Bee friendly cactus";
             break;
         case "32":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How much extra honey do bees produce?";
+            optionAElement.innerText = "2 times";
+            optionBElement.innerText = "4 times";
+            optionCElement.innerText = "3 times";
+            optionDElement.innerText = "45 times";
             break;
         case "33":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What gender are worker bees?";
+            optionAElement.innerText = "Male";
+            optionBElement.innerText = "Female";
+            optionCElement.innerText = ".";
+            optionDElement.innerText = ".";
             break;
         case "34":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How many types of bees live in a hive?";
+            optionAElement.innerText = "Drone, queen, worker, nurse, infants";
+            optionBElement.innerText = "Male, female";
+            optionCElement.innerText = "Male, queen, worker";
+            optionDElement.innerText = "Male, queen, honey collectors";
             break;
         case "35":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How fast can a bee fly?";
+            optionAElement.innerText = "1 km/hour";
+            optionBElement.innerText = "10 km/hour";
+            optionCElement.innerText = "24 km/hour";
+            optionDElement.innerText = "25 km/hour";
             break;
         case "36":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What happens if a queen dies?";
+            optionAElement.innerText = "The colony leaves";
+            optionBElement.innerText = "The colony all dies";
+            optionCElement.innerText = "The workers pick a new queen and the nurse bees feed it royal jelly";
+            optionDElement.innerText = "The oldest nurse bee becomes the new queen bee";
             break;
         case "37":
+            questionTextElement.innerText = "What is the main reason bears attack hives?";
+            optionAElement.innerText = "Honey";
+            optionBElement.innerText = "Bees";
+            optionCElement.innerText = "Bee larvae";
+            optionDElement.innerText = "To interact with bees";
+            break;
+        case "38":
+            questionTextElement.innerText = "What happens if a worker bee uses her stinger on a non allergic human?";
+            optionAElement.innerText = "Human dies";
+            optionBElement.innerText = "Both die";
+            optionCElement.innerText = "Bee dies";
+            optionDElement.innerText = "Both survive";
+            break;
+        case "39":
+            questionTextElement.innerText = "What was honey used for in Ancient Egypt?";
+            optionAElement.innerText = "Sweeteners";
+            optionBElement.innerText = "To pay taxes";
+            optionCElement.innerText = "A royalty treat";
+            optionDElement.innerText = "As glue";
+            break;
+        case "40":
+            questionTextElement.innerText = "Why do honey bees make hexagons?";
+            optionAElement.innerText = "Just because";
+            optionBElement.innerText = "They like hexagons";
+            optionCElement.innerText = "Over the years they have evolved into learning that the hexagon is the least time consuming and best shape for their hives";
+            optionDElement.innerText = "They dont only make hexagons they make octagons in the winter";
+            break;
+        case "41":
+            questionTextElement.innerText = "There are currently ______ beekeepers in Canada?";
+            optionAElement.innerText = "30 000";
+            optionBElement.innerText = "43 000";
+            optionCElement.innerText = "35 000";
+            optionDElement.innerText = "45 000";
+            break;
+        case "42":
+            questionTextElement.innerText = "What is the scientific name of the bee?";
+            optionAElement.innerText = "Anthophila";
+            optionBElement.innerText = "Arthropoda";
+            optionCElement.innerText = "Diptera";
+            optionDElement.innerText = "Bos Taurus";
+            break;
+        case "43":
+            questionTextElement.innerText = "Why can bee populated communities and non bee populated communities be equally affected by bee population decline?";
+            optionAElement.innerText = "They cant be affected equally";
+            optionBElement.innerText = "Since the bee is a keystone species";
+            optionCElement.innerText = "The bee will eventually migrate to that area";
+            optionDElement.innerText = "The bee population will have no affect on any other area";
+            break;
+        case "44":
             questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
             optionAElement.innerText = "15 pounds";
             optionBElement.innerText = "25 pounds";
             optionCElement.innerText = "35 pounds";
             optionDElement.innerText = "45 pounds";
             break;
-        case "38":
+        case "45":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "46":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "47":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "48":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "49":
+            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
+            optionAElement.innerText = "15 pounds";
+            optionBElement.innerText = "25 pounds";
+            optionCElement.innerText = "35 pounds";
+            optionDElement.innerText = "45 pounds";
+            break;
+        case "50":
             questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
             optionAElement.innerText = "15 pounds";
             optionBElement.innerText = "25 pounds";
@@ -725,7 +809,7 @@ function answer(idClicked) {
     
     if (idClicked === "optionA") {
         
-        if (questionId === "1" || questionId === "2" || questionId === "20" || questionId === "21" || questionId === "26" || questionId === "27") {
+        if (questionId === "1" || questionId === "2" || questionId === "20" || questionId === "21" || questionId === "26" || questionId === "27" || questionId === "34" || questionId === "42") {
             //correct
             score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
@@ -762,7 +846,7 @@ function answer(idClicked) {
         }
         
     } else if (idClicked === "optionB") {
-        if (questionId === "4" || questionId === "13" || questionId === "14" || questionId === "16" || questionId === "17" || questionId === "27" || questionId === "28") {
+        if (questionId === "4" || questionId === "13" || questionId === "14" || questionId === "16" || questionId === "17" || questionId === "27" || questionId === "28" || questionId === "31" || questionId === "33" || questionId === "39" || questionId === "43") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
@@ -796,7 +880,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionC") {
-        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19" || questionId === "24" || questionId === "27") {
+        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19" || questionId === "24" || questionId === "27" || questionId === "32" || questionId === "36" || questionId === "37" || questionId === "38" || questionId === "40") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
@@ -830,7 +914,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionD") {
-        if (questionId === "6" || questionId === "10" || questionId === "18" || questionId === "22" || questionId === "23" || questionId === "25" || questionId === "27" || questionId === "29") {
+        if (questionId === "6" || questionId === "10" || questionId === "18" || questionId === "22" || questionId === "23" || questionId === "25" || questionId === "27" || questionId === "29" || questionId === "30" || questionId === "35" || questionId === "41") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
