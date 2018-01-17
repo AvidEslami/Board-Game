@@ -656,11 +656,11 @@ function reply_click(innerText) {
             optionDElement.innerText = "Dont spray pesticides on your lawn";
             break;
         case "31":
-            questionTextElement.innerText = "What can you plant to help the bees?";
-            optionAElement.innerText = "Bee friendly grass";
-            optionBElement.innerText = "Bee friendly flowers";
-            optionCElement.innerText = "Bee friendly trees";
-            optionDElement.innerText = "Bee friendly cactus";
+            questionTextElement.innerText = "What is one of the most efficient ways to help bees and us humans at the same time";
+            optionAElement.innerText = "Plant grass";
+            optionBElement.innerText = "Make hives in our homes";
+            optionCElement.innerText = "Make urban gardens and hives";
+            optionDElement.innerText = "Find the Queen Bee and retrieve her to the hive";
             break;
         case "32":
             questionTextElement.innerText = "How much extra honey do bees produce?";
