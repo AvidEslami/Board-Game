@@ -348,6 +348,29 @@ function handlenewturn() {
             }
         }
     } else if (turn==10) {
+        
+        if (spinnerValue =="dead") {
+                turn = turn-8;
+                var b = document.getElementById("board");
+                b.classList.add("hidden");
+                var c = document.getElementById("cover");
+                c.classList.remove("hidden");
+                var g = document.getElementById("gg");
+                g.classList.remove("hidden");
+                var e = document.getElementById("end");
+                e.classList.remove("hidden");
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+                var s = document.getElementById("wheeltip");
+                s.classList.add("hidden");
+            document.getElementById("end").innerText = score1result;
+            }
+            else if (spinnerValue =="alive") {
+                turn = turn-2;
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+            }
+        
         var y = document.getElementById("player1");
             y.classList.add("position0");
             y.classList.remove("position5");
