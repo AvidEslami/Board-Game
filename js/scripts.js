@@ -350,7 +350,7 @@ function handlenewturn() {
     } else if (turn==10) {
         
         if (spinnerValue =="dead") {
-                turn = turn-8;
+                turn = turn-10;
                 var b = document.getElementById("board");
                 b.classList.add("hidden");
                 var c = document.getElementById("cover");
