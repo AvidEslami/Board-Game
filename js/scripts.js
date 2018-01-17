@@ -747,53 +747,53 @@ function reply_click(innerText) {
             optionDElement.innerText = "The bee population will have no affect on any other area";
             break;
         case "44":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What is the hive made of?";
+            optionAElement.innerText = "Twigs";
+            optionBElement.innerText = "Wax";
+            optionCElement.innerText = "Feces";
+            optionDElement.innerText = "Mud";
             break;
         case "45":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How many known bee species are there?";
+            optionAElement.innerText = "10 000";
+            optionBElement.innerText = "20 000";
+            optionCElement.innerText = "30 000";
+            optionDElement.innerText = "40 000";
             break;
         case "46":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How long do Killer bees chase when they are agitated before giving up?";
+            optionAElement.innerText = "1/4 km";
+            optionBElement.innerText = "1/5 km";
+            optionCElement.innerText = "1/2 km";
+            optionDElement.innerText = "1 km";
             break;
         case "47":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What do beekeepers use to calm the bees down before they collect the honey?";
+            optionAElement.innerText = "Food";
+            optionBElement.innerText = "Other insects";
+            optionCElement.innerText = "Cheese";
+            optionDElement.innerText = "Smoke";
             break;
         case "48":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "Which of the following is not a communication method?";
+            optionAElement.innerText = "Pheromones";
+            optionBElement.innerText = "Singing";
+            optionCElement.innerText = "Dancing";
+            optionDElement.innerText = "All of the above";
             break;
         case "49":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What percentage of plants require bees to pollinate them?";
+            optionAElement.innerText = "50%";
+            optionBElement.innerText = "72%";
+            optionCElement.innerText = "88%";
+            optionDElement.innerText = "20%";
             break;
         case "50":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How many eyes do bees have?";
+            optionAElement.innerText = "2";
+            optionBElement.innerText = "3";
+            optionCElement.innerText = "4";
+            optionDElement.innerText = "5";
             break;
         
     }
@@ -809,7 +809,7 @@ function answer(idClicked) {
     
     if (idClicked === "optionA") {
         
-        if (questionId === "1" || questionId === "2" || questionId === "20" || questionId === "21" || questionId === "26" || questionId === "27" || questionId === "34" || questionId === "42") {
+        if (questionId === "1" || questionId === "2" || questionId === "20" || questionId === "21" || questionId === "26" || questionId === "27" || questionId === "34" || questionId === "42" || questionId === "46") {
             //correct
             score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
@@ -846,7 +846,7 @@ function answer(idClicked) {
         }
         
     } else if (idClicked === "optionB") {
-        if (questionId === "4" || questionId === "13" || questionId === "14" || questionId === "16" || questionId === "17" || questionId === "27" || questionId === "28" || questionId === "31" || questionId === "33" || questionId === "39" || questionId === "43") {
+        if (questionId === "4" || questionId === "13" || questionId === "14" || questionId === "16" || questionId === "17" || questionId === "27" || questionId === "28" || questionId === "31" || questionId === "33" || questionId === "39" || questionId === "43" || questionId === "44" || questionId === "45" || questionId === "48") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
@@ -880,7 +880,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionC") {
-        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19" || questionId === "24" || questionId === "27" || questionId === "32" || questionId === "36" || questionId === "37" || questionId === "38" || questionId === "40") {
+        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19" || questionId === "24" || questionId === "27" || questionId === "32" || questionId === "36" || questionId === "37" || questionId === "38" || questionId === "40" || questionId === "49") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
@@ -914,7 +914,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionD") {
-        if (questionId === "6" || questionId === "10" || questionId === "18" || questionId === "22" || questionId === "23" || questionId === "25" || questionId === "27" || questionId === "29" || questionId === "30" || questionId === "35" || questionId === "41") {
+        if (questionId === "6" || questionId === "10" || questionId === "18" || questionId === "22" || questionId === "23" || questionId === "25" || questionId === "27" || questionId === "29" || questionId === "30" || questionId === "35" || questionId === "41" || questionId === "47" || questionId === "50") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
