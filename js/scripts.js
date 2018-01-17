@@ -635,14 +635,14 @@ function reply_click(innerText) {
             optionDElement.innerText = "ALL will equally suffer";
             break;
         case "28":
-            questionTextElement.innerText = "How much of the American gdp do the bees support?";
+            questionTextElement.innerText = "How much of the worlds GDP do the bees support?";
             optionAElement.innerText = "100 billion";
-            optionBElement.innerText = "200 biillion";
-            optionCElement.innerText = "10 biillion";
-            optionDElement.innerText = "50 biillion";
+            optionBElement.innerText = "200 billion";
+            optionCElement.innerText = "10 billion";
+            optionDElement.innerText = "50 billion";
             break;
         case "29":
-            questionTextElement.innerText = "What is one unfortunately an easy solve to the parasite issue that helps humans but doesnt  work on bees?";
+            questionTextElement.innerText = "What is one unfortunately easy solve to the parasite issue that would work on humans but doesn't work on bees?";
             optionAElement.innerText = "Surgery";
             optionBElement.innerText = "Vaccines";
             optionCElement.innerText = "Pills";
@@ -664,10 +664,10 @@ function reply_click(innerText) {
             break;
         case "32":
             questionTextElement.innerText = "How much extra honey do bees produce?";
-            optionAElement.innerText = "2 times";
-            optionBElement.innerText = "4 times";
-            optionCElement.innerText = "3 times";
-            optionDElement.innerText = "45 times";
+            optionAElement.innerText = "2 times their need";
+            optionBElement.innerText = "4 times their need";
+            optionCElement.innerText = "3 times their need";
+            optionDElement.innerText = "45 times their need";
             break;
         case "33":
             questionTextElement.innerText = "What gender are worker bees?";
