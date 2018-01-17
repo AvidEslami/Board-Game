@@ -51,19 +51,10 @@ function handlenewturn() {
         
     }else if (turn==3) {
         
-        if (spinnerValue =="dead") {
-                turn = turn-2;
-                var b = document.getElementById("board");
-                p.classlist.add("hidden");
-            }
-            else if (spinnerValue =="alive") {
-                turn = turn-2;
-                var t = document.getElementById("board");
-                t.classList.add("hidden");
-            }
+        
             
         
-        else if (spinnerValue === "red") {
+        if (spinnerValue === "red") {
             var x = document.getElementById("wheel");
             x.classList.add("hidden");
             var p = document.getElementById("poisonwheel");
@@ -102,7 +93,27 @@ function handlenewturn() {
     
     } else if (turn==4) {
         
-        
+        if (spinnerValue =="dead") {
+                turn = turn-4;
+                var b = document.getElementById("board");
+                b.classList.add("hidden");
+                var c = document.getElementById("cover");
+                c.classList.remove("hidden");
+                var g = document.getElementById("gg");
+                g.classList.remove("hidden");
+                var e = document.getElementById("end");
+                e.classList.remove("hidden");
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+                var s = document.getElementById("wheeltip");
+                s.classList.add("hidden");
+            document.getElementById("end").innerText = score1result;
+            }
+            else if (spinnerValue =="alive") {
+                turn = turn-2;
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+            }
         
         console.log(turn)
         var w = document.getElementById("wheel");
@@ -166,6 +177,29 @@ function handlenewturn() {
             }
         }
     } else if (turn==6) {
+        
+        if (spinnerValue =="dead") {
+                turn = turn-6;
+                var b = document.getElementById("board");
+                b.classList.add("hidden");
+                var c = document.getElementById("cover");
+                c.classList.remove("hidden");
+                var g = document.getElementById("gg");
+                g.classList.remove("hidden");
+                var e = document.getElementById("end");
+                e.classList.remove("hidden");
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+                var s = document.getElementById("wheeltip");
+                s.classList.add("hidden");
+            document.getElementById("end").innerText = score1result;
+            }
+            else if (spinnerValue =="alive") {
+                turn = turn-2;
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+            }
+        
         console.log(turn)
         var w = document.getElementById("wheel");
         w.classList.remove("hidden");
@@ -228,6 +262,29 @@ function handlenewturn() {
             }
         }
     } else if (turn==8) {
+        
+        if (spinnerValue =="dead") {
+                turn = turn-8;
+                var b = document.getElementById("board");
+                b.classList.add("hidden");
+                var c = document.getElementById("cover");
+                c.classList.remove("hidden");
+                var g = document.getElementById("gg");
+                g.classList.remove("hidden");
+                var e = document.getElementById("end");
+                e.classList.remove("hidden");
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+                var s = document.getElementById("wheeltip");
+                s.classList.add("hidden");
+            document.getElementById("end").innerText = score1result;
+            }
+            else if (spinnerValue =="alive") {
+                turn = turn-2;
+                var t = document.getElementById("poisonwheel");
+                t.classList.add("hidden");
+            }
+        
         console.log(turn)
         var w = document.getElementById("wheel");
         w.classList.remove("hidden");
@@ -541,32 +598,32 @@ function reply_click(innerText) {
             optionDElement.innerText = "All of the above";
             break;
         case "26":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What could be a possible solution for CCD?";
+            optionAElement.innerText = "Turn to other pollinators";
+            optionBElement.innerText = "Throw garbage at bee hives";
+            optionCElement.innerText = "Find a way to make better tasting synthetic honey";
+            optionDElement.innerText = "Find out why the problem is occuring";
             break;
         case "27":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "Which community (local,national,global) will suffer from a bee decline?";
+            optionAElement.innerText = "ALL will equally suffer";
+            optionBElement.innerText = "ALL will equally suffer";
+            optionCElement.innerText = "ALL will equally suffer";
+            optionDElement.innerText = "ALL will equally suffer";
             break;
         case "28":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "How much of the American gdp do the bees support?";
+            optionAElement.innerText = "100 billion";
+            optionBElement.innerText = "200 biillion";
+            optionCElement.innerText = "10 biillion";
+            optionDElement.innerText = "50 biillion";
             break;
         case "29":
-            questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
-            optionAElement.innerText = "15 pounds";
-            optionBElement.innerText = "25 pounds";
-            optionCElement.innerText = "35 pounds";
-            optionDElement.innerText = "45 pounds";
+            questionTextElement.innerText = "What is one unfortunately an easy solve to the parasite issue that helps humans but doesnt  work on bees?";
+            optionAElement.innerText = "Surgery";
+            optionBElement.innerText = "Vaccines";
+            optionCElement.innerText = "Pills";
+            optionDElement.innerText = "All of the above";
             break;
         case "30":
             questionTextElement.innerText = "How much honey does a small colony of bees need to survive the winter?";
@@ -645,7 +702,7 @@ function answer(idClicked) {
     
     if (idClicked === "optionA") {
         
-        if (questionId === "1" || questionId === "2" || questionId === "20" || questionId === "21") {
+        if (questionId === "1" || questionId === "2" || questionId === "20" || questionId === "21" || questionId === "26" || questionId === "27") {
             //correct
             score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
@@ -682,7 +739,7 @@ function answer(idClicked) {
         }
         
     } else if (idClicked === "optionB") {
-        if (questionId === "4" || questionId === "13" || questionId === "14" || questionId === "16" || questionId === "17") {
+        if (questionId === "4" || questionId === "13" || questionId === "14" || questionId === "16" || questionId === "17" || questionId === "27" || questionId === "28") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
@@ -716,7 +773,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionC") {
-        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19" || questionId === "24") {
+        if (questionId === "3" || questionId === "5" || questionId === "7" || questionId === "8" || questionId === "9" || questionId === "11" || questionId === "12" || questionId === "15" || questionId === "19" || questionId === "24" || questionId === "27") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
@@ -750,7 +807,7 @@ function answer(idClicked) {
             document.getElementById("score1result").innerText = score1result;
         }
     } else if (idClicked === "optionD") {
-        if (questionId === "6" || questionId === "10" || questionId === "18" || questionId === "22" || questionId === "23" || questionId === "25") {
+        if (questionId === "6" || questionId === "10" || questionId === "18" || questionId === "22" || questionId === "23" || questionId === "25" || questionId === "27" || questionId === "29") {
         score1result = score1result+2;
             document.getElementById("score1result").innerText = score1result;
             var s = document.getElementById("question");
